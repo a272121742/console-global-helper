@@ -1,7 +1,7 @@
 console-global-helper（模板控制台）
 ===============================
 
-为了方便打印模板中一些helper或者变量的值，提供此包以供在Template中现实数据。其功能参考JavaScript中的console变量的部分功能。
+为了方便`打印模板`中一些`helper值`或者`变量的值`，提供此包以供在`Template`中现实数据查阅。其功能参考`JavaScript`中的`console对象`的部分功能。
 
 ##  使用方法
 
@@ -95,7 +95,7 @@ console-global-helper（模板控制台）
 
 ### {{console.table}}
 
-同`JavaScript`中的`console.table`，将对象制作成一张表。前提是该对象是一个二维的，并且只打印到第二层。
+同`JavaScript`中的`console.table`，将对象制作成一张表。前提是该对象是一个`二维`的，并且只打印到第二层。
 
 ```html
 {{console.table obj}}
@@ -103,12 +103,21 @@ console-global-helper（模板控制台）
 
 ### {{console.clear}}
 
-同`JavaScript`中的`console.clear`，将控制台之前的内容全部清空。
+同`JavaScript`中的`console.clear`，将控制台之前的内容`全部清空`。
 
 ```html
 {{console.clear}}
 ```
 
-##  其他功能
+### {{console.disabe}} / {{console.enable}}
 
-暂无需求，有待开发！
+禁用或者启用控制台功能，`默认`情况下这个功能是`启用`的。
+
+```html
+{{console.disabe}}
+{{console.enable}}
+```
+
+##  特别注意
+
+本包采用了`单例模式`，因此整个程序其实只有一个`console`的`实例对象`，减少性能开销。
