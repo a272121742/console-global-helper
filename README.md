@@ -93,6 +93,22 @@ console-global-helper（模板控制台）
 {{console.profileEnd 'profileName'}}
 ```
 
+### {{console.table}}
+
+同`JavaScript`中的`console.table`，将对象制作成一张表。前提是该对象是一个二维的，并且只打印到第二层。
+
+```html
+{{console.table obj}}
+```
+
+### {{console.clear}}
+
+同`JavaScript`中的`console.clear`，将控制台之前的内容全部清空。
+
+```html
+{{console.clear}}
+```
+
 ##  其他功能
 
 暂无需求，有待开发！

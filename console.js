@@ -50,6 +50,16 @@
       },
       profileEnd : function(){
         console.profileEnd();
+      },
+      table : function(obj){
+        var obj = obj instanceof Spacebars.kw ? undefined : obj;
+        console.table(obj);
+      },
+      trace : function(){
+        console.trace();
+      },
+      clear : function(){
+        console.clear();
       }
     };
   });
